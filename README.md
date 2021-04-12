@@ -1,13 +1,13 @@
-# KURS NAME
+# SHAREPOINT ENTWICKLUNG
 
 Ein Kurs von PPEDV :rocket:
 
-Datum: xx.xx.2021
+Datum: 12.04.2021
 
-Ort: VC / ...
+Ort: VC
 
-Format: Vollzeit / Teilzeit
+Format: Teilzeit
 
-[Agenda von diesem Kurs auf ppedv.de](füge hier die globale URL ein)
+[Agenda von diesem Kurs auf ppedv.de](https://ppedv.de/schulung/kurse/SharePointServerAnwendungsentwicklungAppDesignerWebpartWorkflowTrainingSeminar.aspx)
 
 Ablauf vom Kurs siehe [hier](./TRAINER/readme.md).

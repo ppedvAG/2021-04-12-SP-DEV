@@ -1,5 +1,11 @@
-﻿# Ablauf vom Kurs
+# ABLAUF VOM KURS SP DEV
 
-Info an Trainer:
+## M000 | WARMING UP
 
-nachdem du ein Repo für ein konkretes Datum anhand von diesem Template erstellt hast, füge hier den Inhalt von der README.md Datei im PPKURS-*deinThema* ein
+## M001 | SP DEV INTRO
+
+## M002 | DEV ENV SET UP
+
+## M003 | WEB PARTS
+
+Commit: [m003 done]
