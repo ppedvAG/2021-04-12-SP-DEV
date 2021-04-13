@@ -1,6 +1,6 @@
 @import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
 
-.helloWorld {
+.typeScriptVn {
   .container {
     max-width: 700px;
     margin: 0px auto;
@@ -28,12 +28,12 @@
   }
 
   .subTitle {
-    @include ms-font-s;
+    @include ms-font-l;
     @include ms-fontColor-white;
   }
 
   .description {
-    @include ms-font-m;
+    @include ms-font-l;
     @include ms-fontColor-white;
   }
 

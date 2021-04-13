@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "aecf241a-38e7-4283-8e1c-f047c5180497",
-  "alias": "HelloWorldWebPart",
+  "id": "4218b334-2fbe-4c45-b537-4b9d8f0d0728",
+  "alias": "TypeScriptVnWebPart",
   "componentType": "WebPart",
 
   // The "*" signifies that the version should be taken from the package.json
@@ -17,15 +17,11 @@
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
     "group": { "default": "Other" },
-    "title": { "default": "HelloWorld" },
-    "description": { "default": "Beschreibung zu HelloWorld" },
+    "title": { "default": "TypeScriptVN" },
+    "description": { "default": "Beschr zu TSVN WebPart" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "HelloWorld",
-      "multiline": "default wert für mehrzeiler",
-      "checkboxProp": true, // setzt man false, dann wird undefined beim ersten Laden angezeigt
-      "dropdownProp": "3",
-      "toggleProp": true
+      "description": "TypeScriptVN"
     }
   }]
 }
