@@ -21,16 +21,9 @@ export default class ContextVnWebPart extends BaseClientSideWebPart<IContextVnWe
         <div class="${ styles.container }">
           <div class="${ styles.row }">
             <div class="${ styles.column }">
-              <span class="${ styles.title }">Welcome to SharePoint!</span>
-              <p class="${ styles.subTitle }">Customize SharePoint experiences using Web Parts.</p>
-              <p class="${ styles.description }">${escape(this.properties.description)}</p>
-              <a href="https://aka.ms/spfx" class="${ styles.button }">
-                <span class="${ styles.label }">Learn more</span>
-              </a>
-              <h2>Context</h2>
+              <h2>Web Part Context</h2>
               <p class="${ styles.description }">context.pageContext.web.title: ${this.context.pageContext.web.title}</p>
               <p class="${ styles.description }">context.pageContext.list: ${this.context.pageContext.list}</p>
-              <p class="${ styles.description }">context.pageContext.list.title: ${this.context.pageContext.list.title}</p>
               <p class="${ styles.description }">context.pageContext.site: ${this.context.pageContext.site}</p>
               <p class="${ styles.description }">context.pageContext.site.absoluteUrl: ${this.context.pageContext.site.absoluteUrl}</p>
               <p class="${ styles.description }">context.pageContext.user: ${this.context.pageContext.user}</p>
@@ -46,7 +39,9 @@ export default class ContextVnWebPart extends BaseClientSideWebPart<IContextVnWe
         </div>
       </div>`;
   }
-
+/* 
+<p class="${ styles.description }">context.pageContext.list.title: ${this.context.pageContext.list.title}</p>
+*/
   protected getdataVersion(): Version {
     return Version.parse('1.0');
   }

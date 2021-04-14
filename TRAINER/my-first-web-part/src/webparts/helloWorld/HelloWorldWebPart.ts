@@ -41,6 +41,8 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
               <p class="${ styles.description }">${this.properties.checkboxProp}</p>
               <p class="${ styles.description }">${escape(this.properties.dropdownProp)}</p>
               <p class="${ styles.description }">${this.properties.toggleProp}</p>
+              <p>Änderung nach dem Deployment</p>
+
             </div>
           </div>
         </div>

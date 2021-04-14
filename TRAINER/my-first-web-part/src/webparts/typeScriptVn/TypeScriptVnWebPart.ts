@@ -31,81 +31,79 @@ export default class TypeScriptVnWebPart extends BaseClientSideWebPart<ITypeScri
     this.domElement.innerHTML = `
       <div class="${styles.typeScriptVn}">
       <h2>
-    Syntax einer Funktion
-</h2>
-<p>
-    function fnName() {}
-</p>
-<hr>
-<h2>
-    Syntax einer Klasse
-</h2>
-<p>
-    class className {}
-</p>
-<hr>
-<h2>
-    Syntax einer Klasse mit Members (Props & Methods)
-</h2>
-<p>
-    class className {
-        propName : propType;
-        methodName () : returnType {};
-    }
-</p>
-<hr>
-<h2>
-    Syntax von einem Objekt
-</h2>
-<p>
-    {
-        keyName : value,
-        methodName () : returnType {}
-    }
-</p>
-<hr>
-<h2>
-    Syntax von einem Array
-</h2>
-<p>
-    [element1, element2, element3]
-</p>
-<hr>
-<h2>
-    Syntax von einer generischen Klasse
-</h2>
-<p>
-    class className&#60typeName&#65 {}
-</p>
-<hr>
-<h2>
-    Syntax von einem Interface
-</h2>
-<p>
-    interface interfaceName {
-        key1Name: key1Type;
-        key2Name: key2Type;
-    }
-</p>
-<hr>
-<h2>Union Type</h2>
-<p>
-    let variableName: string | number;
-</p>
-<hr>
-<p>
-    <em>anonyme Pfeilfunktion</em>
-    <br>
-    (): string => {
-        return 'Pfeilfunktion mit keinen Argumenten und einem string-return';
+      Syntax einer Funktion
+  </h2>
+  <pre>
+      function fnName() {}
+  </pre>
+  <hr>
+  <h2>
+      Syntax einer Klasse
+  </h2>
+  <pre>
+      class className {}
+  </pre>
+  <hr>
+  <h2>
+      Syntax einer Klasse mit Members (Props & Methods)
+  </h2>
+  <pre>
+      class className {
+      propName : propType;
+      methodName () : returnType {};
       }
-      <br>
-      <em>benannte Pfeilfunktion</em>
-      <br>
-      let fnName(): string => {
-        return 'Pfeilfunktion mit keinen Argumenten und einem string-return';
+  </pre>
+  <hr>
+  <h2>
+      Syntax von einem Objekt
+  </h2>
+  <pre>
+      {
+      keyName : value,
+      methodName () : returnType {}
       }
-</p>
+  </pre>
+  <hr>
+  <h2>
+      Syntax von einem Array
+  </h2>
+  <pre>
+      [element1, element2, element3]
+  </pre>
+  <hr>
+  <h2>
+      Syntax von einer generischen Klasse
+  </h2>
+  <pre>
+      class className&#60typeName&#62 {}
+  </pre>
+  <hr>
+  <h2>
+      Syntax von einem Interface
+  </h2>
+  <pre>
+      interface interfaceName {
+      key1Name: key1Type;
+      key2Name: key2Type;
+      }
+  </pre>
+  <hr>
+  <h2>Union Type</h2>
+  <pre>
+      let variableName: string | number;
+  </pre>
+  <hr>
+  <pre>
+  <h2>Syntax einer Pfeilfunktion</h2>
+      <em>anonyme Pfeilfunktion</em>
+      (): string => {
+          return 'Pfeilfunktion mit keinen Argumenten und einem string-return';
+        }
+        <em>benannte Pfeilfunktion</em>
+        let fnName = (): string => {
+          return 'Pfeilfunktion mit keinen Argumenten und einem string-return';
+        }
+  </pre>
       </div>`;
   }
 
