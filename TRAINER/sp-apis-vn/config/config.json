@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "sphttpclient-vn-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/sphttpclientVn/SphttpclientVnWebPart.js",
+          "manifest": "./src/webparts/sphttpclientVn/SphttpclientVnWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SphttpclientVnWebPartStrings": "lib/webparts/sphttpclientVn/loc/{locale}.js"
+  }
+}

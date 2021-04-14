@@ -25,31 +25,34 @@ Commit: [m006 done](https://github.com/ppedvAG/2021-04-12-SP-DEV/commit/7a9054a4
 ## M007 | deployment (ohne cdn)
 
 - [ ] Folien: SPFX PROJEKT BEREITSTELLEN
-- [ ] Commit: []()
+- [ ] Commit: [m007 done](https://github.com/ppedvAG/2021-04-12-SP-DEV/commit/9cac0dbb0fff70c12f469d25ef2c15ad58c88b12)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## MXXX | sp apis
+## M008 | sp apis
 
 - [ ] SP REST API & SP HTTP CLIENT
 - [ ] Zugriff auf Listen und Bibliotheken
 - [ ] Slides: SP HTTP CLIENT & ENVIRONMENT
 
 Commit: []()
+
+## M009 | powerapps & flow ausblick
+
+- [ ] powerapps
+- [ ] flow
+
+Commit: []()
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## MXXX | scaffoldings (Projektvorlagen)
 
@@ -67,9 +70,4 @@ Commit: []()
 
 Commit: []()
 
-## MXXX | powerapps & flow ausblick
 
-- [ ] powerapps
-- [ ] flow
-
-Commit: []()
