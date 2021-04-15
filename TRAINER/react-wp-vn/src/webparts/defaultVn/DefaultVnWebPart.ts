@@ -15,16 +15,23 @@ export interface IDefaultVnWebPartProps {
   description: string;
   userInWPProps: string;
 }
-//     let datum = new Date()
 
 export default class DefaultVnWebPart extends BaseClientSideWebPart<IDefaultVnWebPartProps> {
 
+  private  _items = [
+    { Title: 'List 1', Id: '1' },
+    { Title: 'List 2', Id: '2' },
+    { Title: 'List 3', Id: '3' }
+  ]
+
   public render(): void {
+
     const element: React.ReactElement<IDefaultVnProps> = React.createElement(
       DefaultVn,
       {
         description: this.properties.description,
-        user: this.properties.userInWPProps
+        user: this.properties.userInWPProps,
+        lists: this._items
       }
     );
 
@@ -55,7 +62,7 @@ export default class DefaultVnWebPart extends BaseClientSideWebPart<IDefaultVnWe
                 }),
                 PropertyPaneTextField('userInWPProps', {
                   label: strings.UserFieldLabel
-                })                
+                })
               ]
             }
           ]
