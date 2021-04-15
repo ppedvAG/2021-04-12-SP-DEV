@@ -33,7 +33,7 @@ Commit: [m006 done](https://github.com/ppedvAG/2021-04-12-SP-DEV/commit/7a9054a4
 - [ ] Zugriff auf Listen und Bibliotheken
 - [ ] Slides: SP HTTP CLIENT & ENVIRONMENT
 
-Commit: []()
+Commit: [m008 demo](https://github.com/ppedvAG/2021-04-12-SP-DEV/commit/c9fee651d2fe1497aabd0543adeb32c42eaa93f3)
 
 ## M009 | powerapps & flow ausblick
 

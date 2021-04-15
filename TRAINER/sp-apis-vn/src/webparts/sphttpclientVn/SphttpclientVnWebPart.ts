@@ -27,6 +27,7 @@ export interface ISPList {
 export default class SphttpclientVnWebPart extends BaseClientSideWebPart<ISphttpclientVnWebPartProps> {
 
   public render(): void {
+
     this.domElement.innerHTML = `
       <div class="${styles.sphttpclientVn}">
         <div class="${styles.container}">
@@ -35,7 +36,9 @@ export default class SphttpclientVnWebPart extends BaseClientSideWebPart<ISphttp
               <span class="${styles.title}">SPHttpClient & Environment</span>
               <h2>pageContext.web.title: ${escape(this.context.pageContext.web.title)}</h2>
               <p>pageContext.web.absoluteUrl: ${this.context.pageContext.web.absoluteUrl}</p>
+              <h2>Hard codiertes HTML</h2>
               <div id="textJeNachEnv"></div>
+              <h2>Asyncrhon erstelltes HTML</h2>
               <div id="platzFuerAsyncDaten"></div>
             </div>
           </div>
@@ -84,19 +87,30 @@ export default class SphttpclientVnWebPart extends BaseClientSideWebPart<ISphttp
       })
   }
 
-  private _getSPLists() {
+  private _getSPLists(): Promise<ISPLists> {
     console.log('this.context.pageContext.web.absoluteUrl :>> ', this.context.pageContext.web.absoluteUrl);
     // Filter verhindert Abruf versteckter Listen
-    return this.context.spHttpClient.get(this.context.pageContext.web.absoluteUrl + '/_api/web/lists?$filter=Hidden eq false', SPHttpClient.configurations.v1)
-    // return this.context.spHttpClient.get(this.context.pageContext.web.absoluteUrl + '/_api/web/lists', SPHttpClient.configurations.v1)
+    // return this.context.spHttpClient.get(this.context.pageContext.web.absoluteUrl + '/_api/web/lists?$filter=Hidden eq false', SPHttpClient.configurations.v1)
+    return this.context.spHttpClient.get(this.context.pageContext.web.absoluteUrl + '/_api/web/lists', SPHttpClient.configurations.v1)
       .then((response: SPHttpClientResponse) => {
         console.log('response :>> ', response);
         return response.json();
       })
   }
 
+// <ol>
+//   <li></li>
+//   <li></li>
+//   <li></li>
+// </ol>
   private _buildAsyncHtml(lists: ISPList[]) {
-    let htmlString = `<p>${lists[1].Title}</p>`;
+    let htmlString = '<ol>';
+    lists.forEach((list) => {
+      htmlString += `
+      <li>${list.Title}</li>
+      `
+    })
+    htmlString += '</ol>';
     console.log('lists[0] :>> ', lists[0]);
     const divPlatzFuerAsyncDaten: Element = this.domElement.querySelector('#platzFuerAsyncDaten');
     console.log('divPlatzFuerAsyncDaten :>> ', divPlatzFuerAsyncDaten);
