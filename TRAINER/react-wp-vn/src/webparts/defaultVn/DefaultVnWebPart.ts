@@ -13,7 +13,9 @@ import { IDefaultVnProps } from './components/IDefaultVnProps';
 
 export interface IDefaultVnWebPartProps {
   description: string;
+  userInWPProps: string;
 }
+//     let datum = new Date()
 
 export default class DefaultVnWebPart extends BaseClientSideWebPart<IDefaultVnWebPartProps> {
 
@@ -21,7 +23,8 @@ export default class DefaultVnWebPart extends BaseClientSideWebPart<IDefaultVnWe
     const element: React.ReactElement<IDefaultVnProps> = React.createElement(
       DefaultVn,
       {
-        description: this.properties.description
+        description: this.properties.description,
+        user: this.properties.userInWPProps
       }
     );
 
@@ -49,7 +52,10 @@ export default class DefaultVnWebPart extends BaseClientSideWebPart<IDefaultVnWe
               groupFields: [
                 PropertyPaneTextField('description', {
                   label: strings.DescriptionFieldLabel
-                })
+                }),
+                PropertyPaneTextField('userInWPProps', {
+                  label: strings.UserFieldLabel
+                })                
               ]
             }
           ]

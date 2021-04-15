@@ -21,7 +21,8 @@
     "description": { "default": "default-vn description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "default-vn"
+      "description": "default-vn",
+      "userString": "vn"
     }
   }]
 }
