@@ -5,9 +5,9 @@
     "libraryId": "40c91e46-4858-479b-b647-acac157145dd",
     "environment": "spo",
     "packageManager": "npm",
-    "isCreatingSolution": true,
+    "isCreatingSolution": false,
     "isDomainIsolated": false,
     "componentType": "extension",
-    "extensionType": "ApplicationCustomizer"
+    "extensionType": "FieldCustomizer"
   }
 }

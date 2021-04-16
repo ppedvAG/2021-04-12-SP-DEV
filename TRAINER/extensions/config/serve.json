@@ -2,27 +2,14 @@
   "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
   "port": 4321,
   "https": true,
-  "serveConfigurations": {
+  "serveConfigurations": {    
     "default": {
-      "pageUrl": "https://naumchyk.sharepoint.com/sites/naumchyk/SitePages/Test-Page.aspx",
-      "customActions": {
-        "5f37c37a-b422-4e38-b1d3-c376afcabe5c": {
-          "location": "ClientSideExtension.ApplicationCustomizer",
+      "pageUrl": "https://naumchyk.sharepoint.com/sites/naumchyk/Lists/Mengen/AllItems.aspx",
+      "fieldCustomizers": {
+        "Anzahl": {
+          "id": "68a0ba2f-9465-4b38-8c21-72e1262c8617",
           "properties": {
-            "Top": "Header",
-            "Bottom": "Footer"
-          }
-        }
-      }
-    },
-    "appCstmzVn": {
-      "pageUrl": "https://naumchyk.sharepoint.com/sites/naumchyk/SitePages/Test-Page.aspx",
-      "customActions": {
-        "5f37c37a-b422-4e38-b1d3-c376afcabe5c": {
-          "location": "ClientSideExtension.ApplicationCustomizer",
-          "properties": {
-            "Top": "Header",
-            "Bottom": "Footer"
+            "sampleText": "Value"
           }
         }
       }

@@ -9,10 +9,19 @@
           "manifest": "./src/extensions/appCstmzVn/AppCstmzVnApplicationCustomizer.manifest.json"
         }
       ]
+    },
+    "fiels-cstmz-vn-field-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/fielsCstmzVn/FielsCstmzVnFieldCustomizer.js",
+          "manifest": "./src/extensions/fielsCstmzVn/FielsCstmzVnFieldCustomizer.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "AppCstmzVnApplicationCustomizerStrings": "lib/extensions/appCstmzVn/loc/{locale}.js"
+    "AppCstmzVnApplicationCustomizerStrings": "lib/extensions/appCstmzVn/loc/{locale}.js",
+    "FielsCstmzVnFieldCustomizerStrings": "lib/extensions/fielsCstmzVn/loc/{locale}.js"
   }
 }

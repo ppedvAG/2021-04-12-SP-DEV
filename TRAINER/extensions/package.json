@@ -16,7 +16,8 @@
     "@microsoft/sp-application-base": "1.11.0",
     "@microsoft/sp-core-library": "1.11.0",
     "@microsoft/sp-dialog": "1.11.0",
-    "@microsoft/sp-office-ui-fabric-core": "^1.11.0"
+    "@microsoft/sp-office-ui-fabric-core": "^1.11.0",
+    "@microsoft/sp-listview-extensibility": "1.11.0"
   },
   "devDependencies": {
     "@microsoft/sp-build-web": "1.11.0",
