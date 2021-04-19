@@ -9,10 +9,19 @@
           "manifest": "./src/webparts/defaultVn/DefaultVnWebPart.manifest.json"
         }
       ]
+    },
+    "termine-vn-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/termineVn/TermineVnWebPart.js",
+          "manifest": "./src/webparts/termineVn/TermineVnWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "DefaultVnWebPartStrings": "lib/webparts/defaultVn/loc/{locale}.js"
+    "DefaultVnWebPartStrings": "lib/webparts/defaultVn/loc/{locale}.js",
+    "TermineVnWebPartStrings": "lib/webparts/termineVn/loc/{locale}.js"
   }
 }

@@ -25,12 +25,21 @@
           "manifest": "./src/webparts/contextVn/ContextVnWebPart.manifest.json"
         }
       ]
+    },
+    "css-vn-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/cssVn/CssVnWebPart.js",
+          "manifest": "./src/webparts/cssVn/CssVnWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
     "HelloWorldWebPartStrings": "lib/webparts/helloWorld/loc/{locale}.js",
     "TypeScriptVnWebPartStrings": "lib/webparts/typeScriptVn/loc/{locale}.js",
-    "ContextVnWebPartStrings": "lib/webparts/contextVn/loc/{locale}.js"
+    "ContextVnWebPartStrings": "lib/webparts/contextVn/loc/{locale}.js",
+    "CssVnWebPartStrings": "lib/webparts/cssVn/loc/{locale}.js"
   }
 }

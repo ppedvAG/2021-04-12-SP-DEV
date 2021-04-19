@@ -22,7 +22,7 @@ export default class DefaultVnWebPart extends BaseClientSideWebPart<IDefaultVnWe
     { Title: 'List 1', Id: '1' },
     { Title: 'List 2', Id: '2' },
     { Title: 'List 3', Id: '3' }
-  ]
+  ];
 
   public render(): void {
 
