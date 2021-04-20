@@ -6,10 +6,9 @@ import Termin from '../Termin/Termin';
 
 export default class TermineVn extends React.Component<ITermineVnProps, {}> {
   public render(): React.ReactElement<ITermineVnProps> {
-    let termineJSX = this.props.termine.map((terminEl) => {
-      return <Termin key={terminEl.Id} datum={terminEl.Datum} title={terminEl.Title} />
-
-    })
+    /* let termineJSX = this.props.termine.map((terminEl) => {
+      return <Termin key={terminEl.Id} Datum={terminEl.Datum} Title={terminEl.Title} />
+    }) */
     return (
       <div className={styles.termineVn}>
         <div className={styles.container}>
@@ -22,20 +21,28 @@ export default class TermineVn extends React.Component<ITermineVnProps, {}> {
                   </li>
                 ) */}
               {this.props.termine.map((terminEl) => {
-                  console.log('terminEl: ', terminEl);  
-                 /* return <Termin key={terminEl.id} datum={terminEl.datum} title={terminEl.title} /> */
-               
+                console.log('terminEl: ', terminEl);
                 return (
-                <ul>
-                  <li key={terminEl.Id}>
-                    test
-                    <h2>h2 {terminEl.Datum}</h2>
-                    <p>p {terminEl.Title}</p>
-                  </li>                  
-                </ul>
-              )})}
+                  <ul>
+                    <Termin key={terminEl.Id} Datum={terminEl.Datum} Title={terminEl.Title} Id={terminEl.Id}/>
+                    {/* alternativ:
+                    <Termin key={terminEl.Id} termin={terminEl}/> */}
+                  </ul>
+                )
 
-             <div>{termineJSX}</div> 
+                  /* return (
+                  <ul>
+                    <li key={terminEl.Id}>
+                      test
+                      <h2>h2 {terminEl.Datum}</h2>
+                      <p>p {terminEl.Title}</p>
+                    </li>                  
+                  </ul>
+                ) */
+                  ;
+              })}
+
+              {/* <div>{termineJSX}</div>  */}
 
               {/* <Termin datum="19.04.2021" title="termin beschr" /> */}
             </div>

@@ -18,9 +18,10 @@ export interface ITermineVnWebPartProps {
 }
 
 export interface ITermin {
-  Datum: string;
+  Datum: Date | string;
   Title: string;
   Id: number;
+  key: number;
 }
 /* todo #1 */
 
@@ -56,6 +57,17 @@ export default class TermineVnWebPart extends BaseClientSideWebPart<ITermineVnWe
       .then(response => {
         console.log('response :>> ', response);
         this._termine = response;
+
+        this._termine = this._termine.map((terminEl) => {
+          console.log('typeof String :>> ', typeof String); // function, weil Konstruktor
+          console.log('typeof terminEl.Datum === typeof "" :>> ', typeof terminEl.Datum === typeof "");// true
+          terminEl.Datum = new Date(terminEl.Datum.toString())
+          console.log('terminEl.Datum :>> ', terminEl.Datum);
+console.log('typeof terminEl.Datum :>> ', typeof terminEl.Datum);
+          return terminEl;
+          // terminEl.Datum = new Date(terminEl.Datum)
+
+        })
         this.render();
       });
   }
@@ -66,9 +78,13 @@ export default class TermineVnWebPart extends BaseClientSideWebPart<ITermineVnWe
       this.context.pageContext.web.absoluteUrl + `/_api/web/lists/getbytitle('Termine')/items?$select=Id,Title,Datum`,
       SPHttpClient.configurations.v1)
       .then(response => {
+        console.log('_getListItems response :>> ', response); // Response object mit body - Readable Stream
         return response.json();
       })
       .then(jsonResponse => {
+        console.log('jsonResponse :>> ', jsonResponse);
+        // todo #2
+        // json wandelt Datum Objekt zu string. TS-Date akzeptiert auch strings
         return jsonResponse.value;
       }) as Promise<ITermin[]>;
   }

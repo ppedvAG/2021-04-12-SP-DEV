@@ -1,10 +1,12 @@
 import * as React from "react";
+import { ITermin } from "../../TermineVnWebPart";
 
-export default function Termin(propsInFkn: { datum: boolean | React.ReactChild | React.ReactFragment | React.ReactPortal; title: boolean | React.ReactChild | React.ReactFragment | React.ReactPortal; }) {
+export default function Termin(propsInFkn: ITermin) {
     return (
         <li>
-            <h2>{propsInFkn.datum}</h2>
-            <p>{propsInFkn.title}</p>
+            {/* <h2>{typeof propsInFkn.Datum}</h2>// string */}
+            <h2>{(propsInFkn.Datum as Date).toLocaleDateString()}</h2>
+            <p>{propsInFkn.Title}</p>
         </li>
     );
 }
