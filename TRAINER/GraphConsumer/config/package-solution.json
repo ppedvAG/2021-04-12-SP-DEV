@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "spfx-api-scopes-tutorial-client-side-solution",
+    "name": "graph-api-user-search-vn-client-side-solution",
     "id": "f2bddb5d-8a5d-4d08-bde7-1266c686d94c",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
@@ -15,6 +15,6 @@
     ]
   },
   "paths": {
-    "zippedPackage": "solution/spfx-api-scopes-tutorial.sppkg"
+    "zippedPackage": "solution/graph-api-user-search-vn.sppkg"
   }
 }
