@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/vn1/Vn1WebPart.js",
+      "manifest": "./src/webparts/vn1/Vn1WebPart.manifest.json",
+      "outputPath": "./dist/vn-1-web-part.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "Vn1WebPartStrings": "webparts/vn1/loc/{locale}.js"
+  }
+}

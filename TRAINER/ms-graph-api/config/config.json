@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "graph-v-nwp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/graphVNwp/GraphVNwpWebPart.js",
+          "manifest": "./src/webparts/graphVNwp/GraphVNwpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "GraphVNwpWebPartStrings": "lib/webparts/graphVNwp/loc/{locale}.js"
+  }
+}

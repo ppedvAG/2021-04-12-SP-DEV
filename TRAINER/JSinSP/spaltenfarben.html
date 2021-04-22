@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- table>(thead>tr>th*3)+(tbody>(tr>td*3)*3) -->
+
+<table>
+    <thead>
+        <tr>
+            <th>Pflicht</th>
+            <th>Analysiert</th>
+            <th>Grenzwertverletzung</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr id="tr1" class="tableRow">
+            <!-- auch ohne Hochkommata -->
+            <!-- <tr id=tr1> -->
+            <td class="Pflicht">Nein</td>
+            <td class="Analysiert">Ja</td>
+            <td class="Grenzwertverletzung">Ja</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="Pflicht">Ja</td>
+            <td class="Analysiert">Nein</td>
+            <td class="Grenzwertverletzung">Nein</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="Pflicht">Nein</td>
+            <td class="Analysiert">Ja</td>
+            <td class="Grenzwertverletzung">Nein</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="Pflicht">Ja</td>
+            <td class="Analysiert">Nein</td>
+            <td class="Grenzwertverletzung">Ja</td>
+        </tr>
+        <tr class="tableRow">
+            <td class="Pflicht">Ja</td>
+            <td class="Analysiert">Ja</td>
+            <td class="Grenzwertverletzung">Ja</td>
+        </tr>
+        <tr>
+            <td class="Pflicht">Nein</td>
+            <td class="Analysiert">Nein</td>
+            <td class="Grenzwertverletzung">Nein</td>
+        </tr>
+    </tbody>
+</table>
+    
+    <script src="spaltenfarben.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "sp-2016-vn-client-side-solution",
+    "id": "55c4010e-5a98-4d98-a702-9d317a813ff2",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/sp-2016-vn.sppkg"
+  }
+}
