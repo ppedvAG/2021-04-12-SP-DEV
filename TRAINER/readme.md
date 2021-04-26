@@ -2,9 +2,8 @@
 
 ## M000 | WARMING UP
 
-- [ ] Folien: Greeter.pdf
+- [ ] Folien: GREETER.pdf
 - [ ] Demo:
-- [ ] Commit:
 
 ---
 
@@ -12,7 +11,6 @@
 
 - [ ] Folien: SPDEV.pdf > SHAREPOINT ENTWICKLUNG INTRO
 - [ ] Demo:
-- [ ] Commit:
 
 ---
 
@@ -20,7 +18,6 @@
 
 - [ ] Folien: SPDEV.pdf > ENTWICKLUNGSUMGEBUNG EINRICHTEN
 - [ ] Demo: VSCode und npm Module
-- [ ] Commit:
 
 ---
 
@@ -35,14 +32,14 @@
 ## M004 | JS IN SP
 
 - [ ] Folien: SPDEV.pdf > JAVASCRIPT IM SHAREPOINT FRAMEWORK
-- [ ] Demo:
-- [ ] Commit:
 
 ---
 
 ## M005 | TS INTRO
 
-- [ ] Folien: SPDEV.pdf > EINFÜHRUNG IN TYPESCRIPT
+- [ ] Folien:
+  - [ ] SPDEV.pdf > EINFÜHRUNG IN TYPESCRIPT
+  - [ ] TYPESCRIPT.pdf
 - [ ] Demo: [TypeScriptVnWebPart.ts](.\my-first-web-part\src\webparts\typeScriptVn\TypeScriptVnWebPart.ts)
 - [ ] Commit: [before m005](https://github.com/ppedvAG/2021-04-12-SP-DEV/commit/c93418972fbcd17d165a11c618990f02a41f03eb)
 - [ ] Commit: [m005 done](https://github.com/ppedvAG/2021-04-12-SP-DEV/commit/8026a270a1a7f8fd27d036805b8fb354ab31e464)
@@ -66,45 +63,66 @@
 
 ## M008 | SP REST APIS
 
-- [ ] Folien: SPDEV.pdf > SP HTTP CLIENT & ENVIRONMENT
+- [ ] Folien:
+  - [ ] SPDEV.pdf > SP APIS
+  - [ ] SPDEV.pdf > SP HTTP CLIENT & ENVIRONMENT
 - [ ] Zugriff auf Listen und Bibliotheken
-- [ ] Demo: 
+- [ ] Demo:
   - [ ] [SphttpclientVnWebPart.ts](.\sp-apis-vn\src\webparts\sphttpclientVn\SphttpclientVnWebPart.ts)
   - [ ] [SpFxHttpClientDemoWebPart.ts](.\sp-dev-training-spfx-spcontent\Demos\02-spcrud\src\webparts\spFxHttpClientDemo\SpFxHttpClientDemoWebPart.ts)
+  - [ ] [Liste Termine](.\react-wp-vn\src\webparts\termineVn\TermineVnWebPart.ts)
 - [ ] Commit: [m008 demo](https://github.com/ppedvAG/2021-04-12-SP-DEV/commit/c9fee651d2fe1497aabd0543adeb32c42eaa93f3)
-
-<https://github.com/SharePoint/sp-dev-training-spfx-spcontent/tree/master/Demos/02-spcrud>
 
 ---
 
 ## M009 | POWERAPPS & FLOW AUSBLICK
 
 - [ ] Demo: siehe SharePoint Seiten in office.com
-- [ ] Commit:
 
 ---
 
 ## M010 | REACT
 
-- [ ] Folien: SPDEV.pdf > REACT IN SHAREPOINT
+- [ ] Folien:
+  - [ ] SPDEV.pdf > REACT IN SHAREPOINT
+  - [ ] REACT.pdf
 - [ ] Demo: [DefaultVnWebPart.ts](.\react-wp-vn\src\webparts\defaultVn\DefaultVnWebPart.ts)
-- [ ] Commit:
-Commit: [react done](https://github.com/ppedvAG/2021-04-12-SP-DEV/commit/2737ed18f0934dd960b8c2e74d14132edbe27157)
+- [ ] Commit: [react done](https://github.com/ppedvAG/2021-04-12-SP-DEV/commit/2737ed18f0934dd960b8c2e74d14132edbe27157)
 
 ---
 
 ## M011 | SP ERWEITERUNGEN
 
 - [ ] Folien: SPDEV.pdf > SPFX ERWEITERUNGEN ERSTELLEN
-- [ ] Demo: [appCstmzVn](.\extensions\src\extensions\appCstmzVn\AppCstmzVnApplicationCustomizer.ts)
-- [ ] Commit:
-
-<https://github.com/pnp/sp-dev-fx-extensions/tree/master/samples>
+- [ ] Demo:
+  - [ ] [appCstmzVn](.\extensions\src\extensions\appCstmzVn\AppCstmzVnApplicationCustomizer.ts)
+  - [ ] Demo: [fieldCstmz](.\extensions\src\extensions\fielsCstmzVn\FielsCstmzVnFieldCustomizer.ts)
 
 ---
 
-## M012 | JS Link, Script Editor, Content Editor
+## M012 | JS LINK, SCRIPT EDITOR, CONTENT EDITOR
 
-- [ ] Folien: SPDEV.pdf > SPFX ERWEITERUNGEN ERSTELLEN
-- [ ] Demo: [fieldCstmz](.\extensions\src\extensions\fielsCstmzVn\FielsCstmzVnFieldCustomizer.ts)
-- [ ] Commit:
+- [ ] Folien: SPDEV.pdf > JSLINK, SCRIPT & CONTENT EDITOR
+
+---
+
+## M013 | MICROSOFT GRAPH
+
+- [ ] Folien: SPDEV.pdf > EINFÜHRUNG IN MICROSOFT GRAPH
+- [ ] Demo:
+  - [ ] [Outlook Mails](.\ms-graph-api\src\webparts\graphVNwp\GraphVNwpWebPart.ts)
+  - [ ] [User Search](.\GraphConsumer\src\webparts\graphConsumerKb\GraphConsumerKbWebPart.ts)
+
+---
+
+## M014 | EINFÜHRUNG IN SASS
+
+- [ ] Folien:
+  - [ ] SPDEV.pdf > EINFÜHRUNG IN SASS
+  - [ ] SASS.pdf
+
+---
+
+## M015 | OFFICE FLUENT IU
+
+- [ ] Folien: SPDEV.pdf > OFFICE FLUENT UI VERWENDEN
